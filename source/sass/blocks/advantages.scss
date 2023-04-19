@@ -1,9 +1,54 @@
+.advantages {
+  width: 100%;
+}
+
+.advantages__second-list {
+  @include clear-list;
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
 .advantages__title {
+  margin: 0;
   font-size: 18px;
   line-height: 26px;
 }
 
+.advantages__number {
+  display: block;
+  margin: 11px 0 17px;
+}
+
+.advantages__item-big {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.advantages__item--color{
+  background-color: #EEEEEE;
+}
+
 .advantages__text-block {
+ padding: 33px 18px 40px;
+  text-align: center;
+}
+
+.advantages__text-block--color {
   background-color: #81B3D2;
   color: #FFFFFF;
+  @media (min-width: $tablet-width) {
+    height: 256px;
+    padding: 52px 33px 31px 33px;
+  }
+}
+.advantages__img {
+  width: 100%;
+  height: 100%;
+  @media (min-width: $tablet-width) {
+
+/*     width: 512px;
+    height: 256px; */
+  }
 }

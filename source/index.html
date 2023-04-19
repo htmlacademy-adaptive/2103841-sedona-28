@@ -3,17 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Academy: Седона"</title>
+    <title>HTML Academy: "Седона"</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
     <header class="main-header">
-      <a class="main-header__logo" href="index.html">
-        <img src="img/logo.svg" alt="Город Седона" width="185" height="96">
+      <a class="main-header__logo logo" href="index.html">
+        <img class="logo__img" src="img/logo.svg" alt="Город Седона" width="185" height="96">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toogle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+          <span class="visually-hidden">Открыть и закрыть меню</span>
         </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
@@ -41,15 +41,15 @@
     </header>
     <main class="main-container">
       <section class="greetings">
+        <h1 class="visually-hidden">Добро пожаловать в великолепную Седону!</h1>
         <div class="greetings__wrapper">
-          <h1 class="visually-hidden">Добро пожаловать в великолепную Седону!</h1>
           <img class="greetings__text" src="img/greetings-text.svg" alt="Welcome to the gorgeus Sedona, because the Grand Canyon sucks!">
         </div>
       </section>
       <section class="intro">
         <div class="intro__wrapper">
-          <h2 class="intro__title title">Седона — небольшой <br>городок в Аризоне, <br>заслуживающий большего!</h2>
-          <p class="intro__description description">Рассмотрим 5 причин, по которым <br>Седона круче, чем гранд каньон!</p>
+          <h2 class="intro__title title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <p class="intro__description description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
       </section>
       <section class="advantages">
@@ -57,10 +57,10 @@
           <ol class="advantages__list advantages-list">
             <li class="advantages__item">
               <div class="advantages__item-big">
-                <div class="advantages__text-block">
+                <div class="advantages__text-block advantages__text-block--color">
                   <h3 class="advantages__title">Настоящий городок</h3>
-                  <span class="advantages__number">№1</span>
-                  <p class="advantages__text">Cедона не аттракцион для туристов, <br>там течет своя жизнь</p>
+                  <span class="advantages__number">— №1 —</span>
+                  <p class="advantages__text">Cедона не аттракцион для туристов, там течет своя жизнь</p>
                 </div>
                 <img class="advantages__img" src="img/sedona-city.jpg" width="320" height="260" alt="Городок в горах">
               </div>
@@ -81,37 +81,43 @@
             </li>
             <li class="advantages__item">
               <div class="advantages__item-big">
-                <div class="advantages__text-block">
+                <div class="advantages__text-block advantages__text-block--color">
                   <h3 class="advantages__title">Там есть мост Дьявола</h3>
                   <span class="advantages__number">— №2 —</span>
-                  <p class="advantages__text">Да, по нему можно пройти! Если вы <br>осмелитесь, конечно</p>
+                  <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                 </div>
               <img class="advantages__img" src="img/devil-bridge.jpg" width="320" height="260" alt="Мост в горах над пропастью">
               </div>
             </li>
-            <li class="advantages__item">
+          </ol>
+          <ul class="advantages__second-list">
+            <li class="advantages__item advantages__item--color">
               <div class="advantages__text-block">
                 <h3 class="advantages__title">Небольшая площадь</h3>
                 <span class="advantages__number">— №3 —</span>
                 <p class="advantages__text">Все интересные места находятся <br>очень близко</p>
               </div>
             </li>
-            <li class="advantages__item">
-              <h3 class="advantages__title title">Красивая дорога</h3>
-              <span class="advantages__number">— №4 —</span>
-              <p class="advantages__text">Ехать в седону из Лас-Вегаса <br>совсем не скучно!</p>
+            <li class="advantages__item advantages__item--color">
+              <div class="advantages__text-block">
+                <h3 class="advantages__title title">Красивая дорога</h3>
+                <span class="advantages__number">— №4 —</span>
+                <p class="advantages__text">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
+              </div>
             </li>
-            <li class="advantages__item">
-              <h3 class="advantages__title title">Мало Туристов</h3>
-              <span class="advantages__number">— №5 —</span>
-              <p class="advantages__text">Большинство едет в гранд каньон <br>и толпится там</p>
+            <li class="advantages__item advantages__item--color">
+              <div class="advantages__text-block">
+                <h3 class="advantages__title title">Мало Туристов</h3>
+                <span class="advantages__number">— №5 —</span>
+                <p class="advantages__text">Большинство едет в гранд каньон и толпится там</p>
+              </div>
             </li>
-          </ol>
+          </ul>
         </div>
       </section>
       <section class="hotel-search">
         <h2 class="hotel-search__title title title--interested"> Заинтересовались?</h2>
-        <p class="hotel-search__text">Укажите предполагаемые даты <br>поездки, и мы покажем вам лучшие <br>предложения гостиниц в седоне</p>
+        <p class="hotel-search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button class="hotel-search__button button" type="button">Найти гостиницу</button>
       </section>
       <section class="map">

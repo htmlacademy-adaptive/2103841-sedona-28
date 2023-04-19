@@ -1,0 +1,34 @@
+.reasons {
+  @include clear-list;
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.reasons__item--housing {
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    padding: 158px 33px 60px;
+  }
+}
+
+.reasons__item--food {
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    padding: 156px 33px 61px;
+  }
+}
+
+.reasons__item--souvenirs {
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    padding: 153px 33px 64px;
+  }
+}
+
+.reasons__title {
+  text-align: start;
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
+}
