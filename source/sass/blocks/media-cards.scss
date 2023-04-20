@@ -1,0 +1,41 @@
+.media-cards {
+  @include clear-list;
+  @media (min-width: $tablet-width) {
+    margin: 38px 0 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.media-cards__item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.media-cards__img {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.media-cards__title {
+  text-align: start;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.media-cards__author {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: none;
+}
+
+.like-rating__amount {
+  font-weight: 700;
+
+}
