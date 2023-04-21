@@ -48,41 +48,47 @@
     </section>
     <section class="intro">
       <div class="intro__wrapper">
-        <h2 class="intro__title title">Оставьте свой отзыв</h2>
+        <h2 class="title intro__title ">Оставьте свой отзыв</h2>
         <p class="intro__description description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
     </section>
     <section class="review">
       <div class="review__container">
         <form class="review__form form-name" method="post">
+          <div class="user-info">
+            <fieldset class="form-name__wrapper form-name-wrapper">
+              <legend class="form-name__title ">Представьтесь:</legend>
+              <ul class="form-name__list form-name__list--first">
+                <li class="form-name__item">
+                  <label class="form-name__label-name" for="input-name">Имя*:</label>
+                  <input class="form-name__input" id="input-name" name="input-name" type="text" placeholder="Пётр" required>
+                </li>
+                <li class="form-name__item">
+                  <label class="form-name__label-surname" for="input-surname">Фамилия*:</label>
+                  <input class="form-name__input" id="input-surname" name="input-surname" type="text" placeholder="Пустота" required>
+                </li>
+                <li class="form-name__item">
+                  <label class="form-name__label-patronym" for="input-patronym">Отчество:</label>
+                  <input class="form-name__input" id="input-patronym" name="input-patronym" type="text" placeholder="Викторович" required>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form-name__wrapper form-name-wrapper">
+              <legend class="form-name__title">Контактная информация:</legend>
+              <ul class="form-name__list form-name__list--second">
+                <li class="form-name__item">
+                  <label class="form-name__label-phone" for="input-phone">Контактный телефон*:</label>
+                  <input class="form-name__input" id="input-phone" name="input-phone" type="tel" placeholder="Введите телефон" required>
+                </li>
+                <li class="form-name__item">
+                  <label class="form-name__label-mail" for="input-mail">Электронная почта*:</label>
+                  <input class="form-name__input" id="input-mail" name="input-mail" type="email" placeholder="Введите e-mail" required>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
           <fieldset class="form-name__wrapper">
-            <legend class="form-name__title title">Представьтесь:</legend>
-            <label class="form-name__label-name">
-              Имя*:
-              <input class="form-name__input-name" name="input-name" type="text" placeholder="Пётр" required>
-            </label>
-            <label class="form-name__label-surname">
-              Фамилия*:
-              <input class="form-name__input-surname" name="input-surname" type="text" placeholder="Пустота" required>
-            </label>
-            <label class="form-name__label-patronym">
-              Отчество:
-              <input class="form-name__input-patronym" name="input-patronym" type="text" placeholder="Викторович" required>
-            </label>
-          </fieldset>
-          <fieldset class="form-name__wrapper">
-            <legend class="form-name__title title">Контактная информация:</legend>
-            <label class="form-name__label-phone">
-              Контактный телефон*:
-              <input class="form-name__input-phone" name="input-phone" type="tel" placeholder="Введите телефон" required>
-            </label>
-            <label class="form-name__label-mail">
-              Электронная почта*:
-              <input class="form-name__input-mail" name="input-mail" type="email" placeholder="Введите e-mail" required>
-            </label>
-          </fieldset>
-          <fieldset class="form-name__wrapper">
-            <legend class="form-name__title title">Ваше Общее впечатление:</legend>
+            <legend class="form-name__title ">Ваше Общее впечатление:</legend>
             <ul class="form-name__rating-list rating">
               <li class="rating__item">
                 <label class="rating__label">
@@ -100,7 +106,7 @@
               </li>
               <li class="rating__item">
                 <label class="rating__label">
-                  <input class="rating__input" type="radio" name="rating__input" value="unclear" checked>
+                  <input class="rating__input" type="radio" name="rating__input" value="unclear">
                   <span class="rating__radio"></span>
                   <span class="rating__text">Затрудняюсь ответить</span>
                 </label>
@@ -108,7 +114,7 @@
             </ul>
           </fieldset>
           <fieldset class="form-name__wrapper">
-            <legend class="form-name__title title">Посещенные достопримечательности:</legend>
+            <legend class="form-name__title">Посещенные достопримечательности:</legend>
             <ul class="form-name__attractions-list attractions">
               <li class="attractions__item">
                 <label class="attractions__label">
@@ -140,16 +146,18 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form-name__wrapper">
-            <legend class="form-name__title title">Опишите ваши эмоции:</legend>
-            <textarea class="impression-comment" name="impression-comment" cols="30" rows="10"
-              placeholder="Опишите подробно все свои восторги ">
-            </textarea>
-            <div class="impression-remider-wrapper">
-              <button class="form-name__button button" type="submit">Отправить отзыв</button>
-              <span class="form-name__reminder">* — обязательные поля</span>
+          <div class="impression">
+            <div class="impression__wrapper">
+              <label class="form-name__title impression__title" for="impression-comment">Опишите ваши эмоции:</label>
+              <textarea class="impression__comment" id="impression-comment" name="impression-comment" cols="30" rows="10"
+                placeholder="Опишите подробно все свои восторги ">
+              </textarea>
             </div>
-          </fieldset>
+          </div>
+          <div class="impression-remider-wrapper">
+            <button class="form-name__button button" type="submit">Отправить отзыв</button>
+            <span class="form-name__reminder">* — обязательные поля</span>
+          </div>
         </form>
       </div>
     </section>
