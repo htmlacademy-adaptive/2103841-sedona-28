@@ -1,5 +1,6 @@
 .impression {
   width: 100%;
+  margin: 0 auto;
 }
 
 .impression .impression__title {
@@ -43,8 +44,6 @@
 
   @media (min-width: $tablet-width) {
     min-width: 648px;
-    height: 160px;
-
     padding: 20px 15px;
     margin-top: 23px;
   }
