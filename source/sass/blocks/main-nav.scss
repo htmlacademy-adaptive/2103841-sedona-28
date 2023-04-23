@@ -1,4 +1,38 @@
+.main-nav {
+  min-width: 320px;
+  position: relative;
+  @media (min-width: $tablet-width) {
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+}
+
+.main-nav__toogle {
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .main-nav__list {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
   background-color: #81B3D2;
   color: #FFFFFF;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 20% 1fr 1fr;
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+}
+
+.main-nav__list .site-list__item:nth-child(3) {
+  @media (min-width: $tablet-width) {
+    grid-column: 4 / 5;
+  }
 }

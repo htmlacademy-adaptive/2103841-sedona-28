@@ -1,0 +1,14 @@
+.card {
+  position: relative;
+
+  &--big {
+    @media (min-width: $tablet-width) {
+      grid-column: 1 / 3;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 1 / 4;
+    }
+  }
+}
+

@@ -1,0 +1,13 @@
+.socials__list {
+  @include clear-list;
+  display: flex;
+}
+
+.socials__item {
+  margin-right: 5px;
+}
+
+.socials__item:last-child {
+  margin-right: 0;
+}
+
