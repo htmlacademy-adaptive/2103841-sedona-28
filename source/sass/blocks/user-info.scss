@@ -1,12 +1,12 @@
 .user-info {
-  @media (min-width: $tablet-width) {
+  @include tablet {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 30px auto 17px;
     width: 648px;
   }
-  @media (min-width: $desktop-width) {
+  @include desktop {
     margin: 6px auto 21px;
     width: 960px;
   }
@@ -16,12 +16,12 @@
 .user-info .form-name-wrapper {
   padding: 0 20px 45px;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     width: 319px;
     padding: 0 0 48px;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktop {
     width: 465px;
     padding-bottom: 51px;
   }

@@ -3,3 +3,34 @@
   margin: 0;
   padding: 0;
 }
+
+@mixin flex-center($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin only-phones {
+  @media (min-width: $mobile-width-only) {
+    @content;
+  }
+}
+
+@mixin phones {
+  @media (min-width: $phones-width) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}

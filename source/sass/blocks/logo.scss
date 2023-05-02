@@ -1,4 +1,16 @@
-.img__logo {
+.logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+
+  @include tablet {
+    z-index: 5;
+  }
+}
+
+.logo__img {
   height: 96px;
   width: 185px;
 }

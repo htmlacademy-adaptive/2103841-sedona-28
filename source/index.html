@@ -7,36 +7,38 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
-    <header class="main-header">
+    <header class="main-header main-header--nojs">
       <a class="main-header__logo logo" href="index.html">
         <img class="logo__img" src="img/logo.svg" alt="Город Седона" width="185" height="96">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toogle" type="button">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть и закрыть меню</span>
         </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">
-              Фото и Видео
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
-              Форма Отзыва
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru/">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--current">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">
+                Фото и Видео
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">
+                Форма Отзыва
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main class="main-container">
@@ -66,16 +68,16 @@
               </div>
               <ul class="reasons">
                 <li class="reasons__item reasons__item--housing">
-                  <h4 class="reasons__title title">Жильё</h4>
-                  <p class="reasons__text">Рекомендуем пожить в <br>настоящем мотеле, все как в <br>кино!</p>
+                  <h4 class="reasons__title">Жильё</h4>
+                  <p class="reasons__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
                 <li class="reasons__item reasons__item--food">
-                  <h4 class="reasons__title title">Еда</h4>
-                  <p class="reasons__text">Всегда заказывайте фирменный <br>бургер, вы не разочаруетесь!</p>
+                  <h4 class="reasons__title">Еда</h4>
+                  <p class="reasons__text">Всегда&nbsp;заказывайте фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
                 </li>
                 <li class="reasons__item reasons__item--souvenirs">
-                  <h4 class="reasons__title title">Сувениры</h4>
-                  <p class="reasons__text">Не только китайского, но и <br>местного производства!</p>
+                  <h4 class="reasons__title">Сувениры</h4>
+                  <p class="reasons__text">Не&nbsp;только&nbsp;китайского, <br>но&nbsp;и местного производства!<br></p>
                 </li>
               </ul>
             </li>
@@ -90,7 +92,7 @@
               </div>
             </li>
           </ol>
-          <ul class="advantages__second-list">
+          <ol class="advantages__second-list">
             <li class="advantages__item advantages__item--color">
               <div class="advantages__text-block">
                 <h3 class="advantages__title">Небольшая площадь</h3>
@@ -112,7 +114,7 @@
                 <p class="advantages__text">Большинство едет в гранд каньон и толпится там</p>
               </div>
             </li>
-          </ul>
+          </ol>
         </div>
       </section>
       <section class="hotel-search">
@@ -122,7 +124,10 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Карта Седоны</h2>
-        <img class="map__image" src="img/map-mobile.jpg" alt="Расположение города на карте">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.38018730558!2d-111.86517855273749!3d34.85435832354931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C%20AZ%2086336%2C%20USA!5e0!3m2!1sen!2sge!4v1682362780865!5m2!1sen!2sge"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
     </main>
     <footer class="main-footer">
@@ -177,5 +182,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/main-nav.js"></script>
   </body>
 </html>

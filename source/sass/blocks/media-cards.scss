@@ -1,13 +1,13 @@
 .media-cards {
   @include clear-list;
-  @media (min-width: $tablet-width) {
+  @include tablet {
     margin: 38px 0 0;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktop {
     grid-template-columns: repeat(3, 1fr);
   }
 }
