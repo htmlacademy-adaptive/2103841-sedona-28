@@ -16,6 +16,45 @@
   margin-bottom: 25px;
 }
 
+.media-cards__wrapper {
+  padding: 18px 0 49px 0;
+
+  min-height: 80px;
+  width: 100%;
+
+  text-align: start;
+
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 5px 13px 20px;
+
+    background-color: #f2f2f2;
+  }
+
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    color: #ffffff;
+    background-color: #0000003f;
+
+    padding: 16px 5px 13px 25px;
+  }
+}
+
+.media-cards__text {
+  max-width: 260px;
+}
+
 .media-cards__img {
   margin: 0 auto;
   width: 100%;
@@ -35,7 +74,44 @@
   text-transform: none;
 }
 
+.media-cards__button {
+  position: relative;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+
+    content: "";
+
+    width: 23px;
+    height: 21px;
+
+    top: -2px;
+    left: -16%;
+    transform: translate(-50%, -50%);
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='20' fill='none'%3E%3Cpath fill='%23000000' d='m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z'/%3E%3C/svg%3E");
+    opacity: 0.3;
+
+    @include tablet {
+      left: 0;
+    }
+
+    @include desktop {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='20' fill='none'%3E%3Cpath fill='%23FFFFFF' d='m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z'/%3E%3C/svg%3E");
+      opacity: 1;
+    }
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+
 .like-rating__amount {
   font-weight: 700;
-
+  max-width: 100px;
+  overflow-wrap: anywhere;
 }

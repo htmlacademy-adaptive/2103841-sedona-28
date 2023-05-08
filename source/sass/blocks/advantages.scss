@@ -3,11 +3,25 @@
 }
 
 .advantages__second-list {
+  background-color: #EEEEEE;
   @include clear-list;
+  padding: 10px 0 0;
   @include tablet {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @include desktop {
+    padding: 21px 0 10px;
   }
 }
+
+.advantages__item--color .advantages__text-block {
+  @include tablet {
+
+  }
+}
+
 
 .advantages__title {
   margin: 0;
@@ -26,14 +40,21 @@
   }
 }
 
-.advantages__item--color{
-  background-color: #EEEEEE;
+.advantages__item--color:first-child .advantages__text-block,
+.advantages__item--color:nth-child(3) .advantages__text-block {
+  padding: 43px 33px 63px;
+}
+
+.advantages__item--color:nth-child(2) .advantages__text-block {
+  padding: 41px 33px;
 }
 
 .advantages__text-block {
  padding: 33px 18px 40px;
   text-align: center;
 }
+
+
 
 .advantages__text-block--color {
   background-color: #81B3D2;
