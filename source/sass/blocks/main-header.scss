@@ -1,15 +1,16 @@
 
 .main-header {
   min-height: 56px;
+  font-size: 14px;
+  line-height: 21px;
   text-align: center;
   display: flex;
   flex-direction: column;
-}
+  &--nojs {
+    padding-top: 100px;
 
-.main-header__logo {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
+    @include tablet {
+      padding-top: 0;
+    }
+  }
 }

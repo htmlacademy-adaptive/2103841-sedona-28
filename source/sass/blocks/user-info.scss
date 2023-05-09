@@ -1,28 +1,110 @@
 .user-info {
-  @media (min-width: $tablet-width) {
+  position: relative;
+
+  @include tablet {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
     margin: 30px auto 17px;
+
     width: 648px;
+
+    &::before {
+      position: absolute;
+
+      content: "";
+
+      width: 1px;
+      height: 91%;
+
+      right: 50%;
+
+      background-color: #dbdbdb;
+
+      @include desktop {
+        right: 48.5%;
+      }
+    }
   }
-  @media (min-width: $desktop-width) {
+
+  @include desktop {
     margin: 6px auto 21px;
+
+    justify-content: space-between;
+
     width: 960px;
   }
 }
 
-
-.user-info .form-name-wrapper {
+.user-info .form-name-block {
   padding: 0 20px 45px;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     width: 319px;
+
     padding: 0 0 48px;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktop {
     width: 465px;
+
     padding-bottom: 51px;
+  }
+}
+
+.user-info .form-name-block:first-child,
+.user-info .form-name-block:last-child {
+  position: relative;
+
+  &::before {
+    position: absolute;
+
+    content: "";
+
+    width: 100%;
+    height: 1px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background-color: #dbdbdb;
+
+    @include tablet{
+      display: none;
+    }
+  }
+}
+
+.user-info .form-name-block:first-child {
+  @include desktop {
+    width: 490px;
+  }
+
+  &::before {
+    top: -50px;
+  }
+}
+
+.user-info .form-name-block:last-child {
+  &::before {
+    top: -50px;
+  }
+}
+
+.user-info .form-name__heading {
+  @include tablet {
+    padding: 0 0 10px;
+  }
+}
+
+.user-info .form-name__input {
+  @include tablet {
+    width: 277px;
+  }
+
+  @include desktop {
+    width: 100%;
   }
 }
