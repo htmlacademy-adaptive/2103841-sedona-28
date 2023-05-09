@@ -1,0 +1,141 @@
+.form-name-block {
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+
+  margin: 0;
+  padding: 0 0 45px;
+
+  min-height: 200px;
+
+  border: none;
+
+  @include tablet {
+    padding: 0 0 48px;
+  }
+}
+
+
+.form-name-block__list--first .form-name__input::placeholder,
+.form-name-block__list--first .form-name__input {
+  color: rgba(0, 0, 0,);
+}
+
+.form-name-block__list--second .form-name__input::placeholder,
+.form-name-block__list--second .form-name__input {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.form-name-block__title {
+
+  font-size: 14px;
+  line-height: 21px;;
+  overflow-wrap: break-word;
+  max-width: 239px;
+  margin: 18px auto -1px 16px;
+  color: #333333;
+
+  &--name {
+    margin-top: 19px;
+
+    @include desktop {
+      margin-top: 18px;
+    }
+  }
+
+  &--email {
+    margin-top: 17px;
+
+    @include tablet {
+      margin-top: 20px;
+    }
+  }
+
+  @include desktop {
+    margin-top: 17px;
+  }
+}
+
+
+.form-name-block__list {
+
+  @include clear-list;
+
+  &--first {
+    margin-top: 1px;
+
+    @include tablet {
+      margin-top: 0;
+      padding-left: 1px;
+    }
+
+    @include desktop {
+      padding-right: 60px;
+    }
+  }
+
+  &--second {
+    @include tablet {
+      padding-left: 40px;
+    }
+
+    @include desktop {
+      padding-left: 64px;
+    }
+  }
+}
+
+.form-name-block__grade-list {
+  @include clear-list;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 2px 0 0;
+  text-align: start;
+
+  &--rating {
+    @include tablet {
+      column-gap: 13px;
+      margin: 35px 34px 17px;
+    }
+
+    @include desktop {
+      margin: 55px 37px 17px 34px;
+
+      gap: 64px;
+    }
+  }
+
+  &--attractions {
+    @include tablet {
+      column-gap: 31px;
+      margin: 37px 84px 13px;
+    }
+
+    @include desktop {
+      margin: 68px 37px 66px 34px;
+      gap: 65px;
+    }
+  }
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include desktop {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.form-name-block__grade-item {
+  margin: 0 0 37px 21px;
+
+  max-width: 300px;
+}
+
+.form-name-block__item {
+  display: flex;
+  flex-direction: column;
+}
+

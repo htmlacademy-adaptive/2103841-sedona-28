@@ -1,37 +1,26 @@
-.form-name__wrapper {
+.form-name__block {
   border: none;
 }
 
-.form-name__title {
+.form-name__heading {
   font-weight: 700;
+  color: #000000;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
   overflow-wrap: break-word;
   max-width: 270px;
+  margin: 0 auto;
   padding: 22px 0 0;
   background-color: #ffffff;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     font-size: 21px;
     line-height: 26px;
     max-width: 420px;
+    position: relative;
+    z-index: 1;
   }
-}
-
-.form-name__list {
-  @include clear-list;
-}
-
-.form-name__item {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-name__input {
-  border: none;
-  background-color: #F2F2F2;
-  padding: 16px;
 }
 
 .form-name__remider {
@@ -41,7 +30,7 @@
   display: flex;
   flex-direction: column;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     margin: 0 0 63px;
 
     flex-direction: row;
@@ -49,7 +38,7 @@
     gap: 166px;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktop {
     gap: 225px;
   }
 }
@@ -66,14 +55,109 @@
   padding: 16px 49px;
   margin-top: 48px;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     padding: 16px 70px;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktop {
     padding: 16px 101px;
 
     margin-top: 47px;
   }
 }
+
+.form-name__button:hover,
+.form-name__button:focus {
+  background-color: #669ec0;
+}
+
+.form-name__button:active {
+  background-color: #5496bd;
+  color: #ffffff4d;
+}
+
+.form-name__button:disabled {
+  background-color: #e5e5e5;
+}
+
+.form-name__note {
+  margin-top: 5px;
+  text-transform: uppercase;
+
+  font-size: 12px;
+
+  @include tablet {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;;
+  }
+}
+
+.form-name__opinion {
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+
+  @include tablet {
+    margin-top: 26px;
+  }
+}
+
+.form-name__input {
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;;
+
+  background-color: #f2f2f2;
+
+  border: none;
+
+  padding: 19px 16px 13px 14px;
+  letter-spacing: -1px;
+
+  &--icon-phone {
+    padding: 19px 57px 15px 14px;
+
+    background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.6 7.8C5 10.6 7.4 12.9 10.2 14.4L12.4 12.2C12.7 11.9 13.1 11.8 13.4 12C14.5 12.4 15.7 12.6 17 12.6C17.6 12.6 18 13 18 13.6V17C18 17.6 17.6 18 17 18C7.6 18 0 10.4 0 1C0 0.4 0.4 0 1 0H4.5C5.1 0 5.5 0.4 5.5 1C5.5 2.2 5.7 3.4 6.1 4.6C6.2 4.9 6.1 5.3 5.9 5.6L3.6 7.8Z' fill='%23010101'/%3E%3C/svg%3E%0A"),
+      linear-gradient(to left, #e6e6e6 58px, transparent 58px);
+    background-position: right 20px center, right center;
+    background-repeat: no-repeat;
+  }
+
+  &--icon-email {
+    padding: 16px 57px 16px 16px;
+
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='12' viewBox='0 0 16 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 8C7.7 8 7.5 7.9 7 7.7L0 4V11C0 11.5 0.5 12 1 12H15C15.5 12 16 11.5 16 11V4L9 7.7C8.5 7.9 8.3 8 8 8ZM15 0H1C0.5 0 0 0.5 0 1V1.8L8 6L16 1.8V1C16 0.5 15.5 0 15 0Z' fill='black'/%3E%3C/svg%3E%0A"),
+      linear-gradient(to left, #e6e6e6 58px, transparent 58px);
+    background-position: right 20px center, right center;
+    background-repeat: no-repeat;
+  }
+
+  &--opinion {
+    height: 150px;
+    min-width: 280px;
+
+    padding: 15px;
+    margin-top: 24px;
+
+    resize: none;
+
+    @include tablet {
+      min-width: 648px;
+      height: 160px;
+
+      padding: 20px 15px;
+      margin-top: 23px;
+    }
+
+    @include desktop {
+      min-width: 768px;
+    }
+  }
+
+  @include tablet {
+    padding: 19px 16px 12px 12px;
+  }
+}
+
 

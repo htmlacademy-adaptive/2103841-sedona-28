@@ -1,0 +1,79 @@
+.grade-wrapper {
+  width: 100%;
+  position: relative;
+
+  &::before {
+    position: absolute;
+
+    content: "";
+
+    width: 100%;
+    height: 1px;
+
+    top: -11px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background-color: #dbdbdb;
+
+    @include tablet {
+      top: 13px;
+    }
+  }
+}
+
+.grade-wrapper .form-name-block {
+  padding: 0 20px;
+
+  @include tablet {
+    width: 648px;
+
+    padding: 0 0 48px;
+    margin: 0 auto;
+  }
+
+  @include desktop {
+    width: 100%;
+  }
+}
+
+.grade-wrapper:nth-child(2)::before {
+  @include tablet {
+    top: 28px;
+  }
+}
+
+.grade-wrapper .form-name-block:first-child {
+  padding-bottom: 7px;
+
+  @include tablet {
+    padding-bottom: 0;
+  }
+
+  @include desktop {
+    margin-bottom: -8px;
+  }
+}
+
+.grade-wrapper .form-name__heading {
+  padding: 15px 0 0;
+  margin-bottom: 26px;
+
+  @include tablet {
+    padding: 2px 66px 2px;
+    margin-bottom: 0;
+
+    position: relative;
+  }
+}
+
+.grade-wrapper .form-name__heading {
+  display: block;
+  padding: 12px 0 0;
+  margin: 0 auto 28px;
+
+  @include tablet {
+    padding: 3px 0 0;
+  }
+}

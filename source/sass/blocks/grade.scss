@@ -1,0 +1,11 @@
+.grade {
+  @include tablet {
+    @include flex-center(column);
+    padding: 0;
+    margin: 0 60px;
+  }
+
+  @include desktop {
+    margin: 0 120px;
+  }
+}
