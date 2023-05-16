@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: "Седона"</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page-body">
     <header class="main-header main-header--nojs">
@@ -56,10 +60,16 @@
           </div>
           <ul class="media-content__list media-cards">
             <li class="media-cards__item card card--big">
-              <img class="media-cards__img" src="img/desert-road.jpg" alt="Дорога в пустыне">
+              <a href="#" class="media-cards__img-wrapper">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/desert-road-desktop.jpg 1x, img/desert-road-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/desert-road-tablet.jpg 1x, img/desert-road-tablet@2x.jpg 2x">
+                  <img class="media-cards__img" src="img/desert-road-mobile.jpg"  srcset="img/desert-road-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога в пустыне">
+                </picture>
+              </a>
               <div class="media-cards__wrapper">
                 <div class="media-cards__text">
-                  <h3 class="media-cards__title title">Неродные просторы</h3>
+                  <h3 class="media-cards__title">Неродные просторы</h3>
                   <p class="media-cards__author">Автор фото: Борис</p>
                 </div>
                 <div class="media-cards__likes like-rating">
@@ -72,10 +82,16 @@
               </div>
             </li>
             <li class="media-cards__item card">
-              <img class="media-cards__img" src="img/kaktus.jpg" alt="Кактус">
+              <a href="#" class="media-cards__img-wrapper">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/kaktus-desktop.jpg 1x, img/kaktus-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/kaktus-tablet.jpg 1x, img/kaktus-tablet@2x.jpg 2x">
+                  <img class="media-cards__img" src="img/kaktus-mobile.jpg" srcset="img/kaktus-mobile@2x.jpg 2x" width="280" height="280" alt="Кактус">
+                </picture>
+              </a>
               <div class="media-cards__wrapper">
                 <div class="media-cards__text">
-                  <h3 class="media-cards__title title">Местная растительность</h3>
+                  <h3 class="media-cards__title">Местная растительность</h3>
                   <p class="media-cards__author">Автор фото: Сергей</p>
                 </div>
                 <div class="media-cards__likes like-rating">
@@ -88,10 +104,16 @@
               </div>
             </li>
             <li class="media-cards__item card">
-              <img class="media-cards__img" src="img/mountain-road.jpg" alt="Дорога в горах">
+              <a href="#" class="media-cards__img-wrapper">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/mountain-road-desktop.jpg 1x, img/mountain-road-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/mountain-road-tablet.jpg 1x, img/mountain-road-tablet@2x.jpg 2x">
+                  <img class="media-cards__img" src="img/mountain-road-mobile.jpg" srcset="img/mountain-road-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога в горах">
+                </picture>
+              </a>
               <div class="media-cards__wrapper">
                 <div class="media-cards__text">
-                  <h3 class="media-cards__title title">Дорога на север</h3>
+                  <h3 class="media-cards__title">Дорога на север</h3>
                   <p class="media-cards__author">Автор фото: Петр</p>
                 </div>
                 <div class="media-cards__likes like-rating">
@@ -104,10 +126,16 @@
               </div>
             </li>
             <li class="media-cards__item card">
-              <img class="media-cards__img" src="img/devil-bridge.jpg" alt="Мост в горах над пропастью">
+              <a href="#" class="media-cards__img-wrapper">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/devil-bridge-catalog-desktop.jpg 1x, img/devil-bridge-catalog-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/devil-bridge-catalog-tablet.jpg 1x, img/devil-bridge-catalog-tablet@2x.jpg 2x">
+                  <img class="media-cards__img" src="img/devil-bridge-catalog-mobile.jpg" srcset="img/devil-bridge-catalog-mobile@2x.jpg 2x" width="280" height="280" alt="Мост в горах над пропастью">
+                </picture>
+              </a>
               <div class="media-cards__wrapper">
                 <div class="media-cards__text">
-                  <h3 class="media-cards__title title">Мост дьявола</h3>
+                  <h3 class="media-cards__title">Мост дьявола</h3>
                   <p class="media-cards__author">Автор фото: Антон</p>
                 </div>
                 <div class="media-cards__likes like-rating">
@@ -125,8 +153,12 @@
       <section class="video-presentation">
         <h2 class="video-presentation__title title">Все еще сомневаетесь?</h2>
         <p class="video-presentation__description description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <div class="video-presentation__block video-clip">
-          <img class="video-clip__img" src="img/video-clip-placeholder.jpg" alt="Видео дороги на фоне гор">
+        <div class="video-presentation__wrapper">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/video-clip-desktop.jpg 1x, img/video-clip-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-clip-tablet.jpg 1x, img/video-clip-tablet@2x.jpg 2x">
+            <img class="video-clip__img" src="img/video-clip-mobile.jpg" srcset="img/video-clip-mobile@2x.jpg 2x" alt="Превью видеопрезентации о городке Седона." width="280"height="177">
+          </picture>
           <button class="visually-hidden"> <span class="">кнопка запуска ролика</span></button>
         </div>
       </section>
