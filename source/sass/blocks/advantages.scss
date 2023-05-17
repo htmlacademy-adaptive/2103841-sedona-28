@@ -64,12 +64,13 @@
     padding: 52px 33px 31px 33px;
   }
 }
+
+.advantages__img-wrapper {
+  min-width: 320px;
+}
+
 .advantages__img {
   width: 100%;
   height: 100%;
-  @include tablet {
-
-/*     width: 512px;
-    height: 256px; */
-  }
+  object-fit: cover;
 }

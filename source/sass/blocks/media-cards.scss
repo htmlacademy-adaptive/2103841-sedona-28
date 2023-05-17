@@ -12,8 +12,12 @@
   }
 }
 
-.media-cards__item:not(:last-child) {
+/* .media-cards__item:not(:last-child) {
   margin-bottom: 25px;
+} */
+
+.media-cards__img-wrapper {
+  background-color: #947350;
 }
 
 .media-cards__wrapper {
@@ -62,9 +66,15 @@
 }
 
 .media-cards__title {
+  margin: 0;
   text-align: start;
   font-size: 14px;
   line-height: 21px;
+  color: #000000;
+
+  @include desktop {
+    color: #ffffff;
+  }
 }
 
 .media-cards__author {
