@@ -96,6 +96,8 @@
 .form-name__opinion {
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
+  display: flex;
+  flex-direction: column;
 
   @include tablet {
     margin-top: 26px;
@@ -160,4 +162,24 @@
   }
 }
 
+.form-name__input--opinion::placeholder {
+  color: #3333334d;
+  white-space: pre-line;
 
+  letter-spacing: 0.1px;
+}
+
+.form-name__input:hover {
+  background-color: #e5e5e5;
+}
+
+.form-name__input:focus {
+  outline: none;
+  background-color: #e5e5e5;
+}
+
+.form-name__input:active {
+  outline: 4px solid #e5e5e5;
+  outline-offset: -4px;
+  background-color: #ffffff;
+}
