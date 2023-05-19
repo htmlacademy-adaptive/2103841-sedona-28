@@ -84,6 +84,28 @@
   text-transform: none;
 }
 
+.media-cards__likes {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 15px 0;
+  color: inherit;
+
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+
+  @include tablet {
+    margin: -2px 15px 0;
+  }
+
+  @include desktop {
+    margin: 2px 15px 0;
+  }
+}
+
+
 .media-cards__button {
   position: relative;
 
@@ -119,9 +141,3 @@
   }
 }
 
-
-.like-rating__amount {
-  font-weight: 700;
-  max-width: 100px;
-  overflow-wrap: anywhere;
-}
