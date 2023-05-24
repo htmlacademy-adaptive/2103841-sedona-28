@@ -18,8 +18,15 @@
 
 .intro__title {
  margin-bottom: 35px;
+ color: #000;
+
+ font-size: 18px;
+ line-height: 26px;
 
  @include tablet {
   margin: 0 0 28px;
+  font-size: 21px;
+  line-height: 26px;
+
 }
 }
