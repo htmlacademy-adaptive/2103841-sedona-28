@@ -1,13 +1,14 @@
 .hotel-search {
   padding: 38px 18px 49px;
+
   @include flex-center(column);
 
   @include tablet {
-    padding: 60px 18px 55px ;
+    padding: 60px 18px 55px;
   }
 
   @include desktop {
-    padding: 60px 18px 66px ;
+    padding: 60px 18px 66px;
   }
 }
 
@@ -26,17 +27,17 @@
   @include desktop {
     font-size: 30px;
     line-height: 30px;
-    margin: 0 0 40px;
+    margin: 0 0 30px;
   }
 }
 
 .hotel-search__text {
   margin: 0 0 33px;
   max-width: 435px;
-  color: #333333;
   text-align: center;
+
   @include tablet {
-    margin: 0 0 41px;
+    margin: 0 0 45px;
   }
 
   @include desktop {
@@ -46,6 +47,7 @@
 
 .hotel-search__text br {
   display: none;
+
   @include tablet {
     display: inline;
   }

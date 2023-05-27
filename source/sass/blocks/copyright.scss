@@ -1,12 +1,17 @@
+.copyright__link {
+  display: flex;
+  align-items: center;
+}
+
 
 .copyright {
-  padding: 30px 18px 33px 18px;
+  padding: 25px 14px 25px 14px;
   display: flex;
   align-items: center;
 }
 
 .copyright__text {
   font-weight: 400;
-  margin-right: 5px;
+  margin-right: 12px;
   color: #000000;
 }

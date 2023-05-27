@@ -1,11 +1,137 @@
-.advantages {
-  width: 100%;
+
+.advantages__title {
+  margin: 14px 0 11px;
+  font-size: 18px;
+  line-height: 26px;
+
+  @include tablet {
+    font-size: 21px;
+    line-height: 26px;
+    margin: 14px 0 14px;
+  }
+
+  &--secondary {
+    @include tablet {
+      margin: 14px 25px;
+    }
+
+    @include desktop {
+      margin: 14px 100px;
+    }
+  }
+}
+.advantages__title br {
+  display: none;
+
+  @include tablet {
+    display: inline;
+  }
 }
 
+.advantages__description--secondary br {
+  display: none;
+
+  @include tablet {
+    display: inline;
+  }
+}
+
+
+.advantages__number {
+  display: block;
+  margin-bottom: 18px;
+
+  &--secondary {
+    margin-bottom: 16px;
+  }
+
+  @include tablet {
+    margin-bottom: 23px;
+  }
+}
+
+.advantages__description {
+  margin: 0;
+
+  &--secondary {
+    max-width: 250px;
+    margin: 0 auto;
+
+    @include desktop {
+      max-width: 320px;
+    }
+  }
+}
+
+.advantages__list {
+  @include clear-list;
+
+  position: relative;
+
+  &::before {
+    position: absolute;
+
+    content: "";
+    width: 100%;
+    height: 37px;
+
+    top: -15px;
+    right: 0;
+
+    background-image: url("data:image/svg+xml,%3Csvg width='768' height='37' viewBox='0 0 768 37' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 0H384V37L0 0Z' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M768 0H384V37L768 0Z' fill='white'/%3E%3C/svg%3E%0A");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include tablet {
+      display: none;
+    }
+  }
+}
+
+.advantages__item {
+
+  &--main {
+    background-color: #81b3d2;
+    color: #ffffff;
+  }
+
+  &--secondary {
+    background-color: #eeeeee;
+
+    position: relative;
+
+    padding: 0 30px 37px;
+
+    display: grid;
+
+    grid-template-rows: 1fr 60%;
+
+    @include tablet {
+      padding: 0 10px 21px;
+    }
+
+    @include desktop {
+      padding: 0 10px 0;
+    }
+  }
+}
+
+.advantages__content {
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+
+
 .advantages__second-list {
-  background-color: #EEEEEE;
   @include clear-list;
   padding: 10px 0 0;
+  background-color: #eeeeee;
+  color: #000000;
+
   @include tablet {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -16,59 +142,119 @@
   }
 }
 
-.advantages__item--color .advantages__text-block {
-  @include tablet {
+.advantages__second-list {
+  @include clear-list;
+  padding: 10px 0 0;
+  background-color: #eeeeee;
+  color: #000000;
 
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @include desktop {
+    padding: 21px 0 10px;
   }
 }
 
-
-.advantages__title {
-  margin: 0;
-  font-size: 18px;
-  line-height: 26px;
-
+.advantages__second-list .advantages__item--secondary:first-child,
+.advantages__second-list .advantages__item--secondary:nth-child(3) {
   @include tablet {
-    font-size: 21px;
-    line-height: 26px;
-    margin: 14px 0 14px;
+    margin: 16px 20px 2px;
   }
 }
 
-.advantages__number {
-  display: block;
-  margin: 11px 0 17px;
-}
-
-.advantages__item-big {
+.advantages__second-list .advantages__item--secondary:nth-child(2) {
   @include tablet {
-    display: flex;
+    margin: 17px 35px;
   }
 }
 
-.advantages__item--color:first-child .advantages__text-block,
-.advantages__item--color:nth-child(3) .advantages__text-block {
-  padding: 43px 33px 63px;
+.advantages__second-list .advantages__item--secondary:last-child {
+  padding-bottom: 29px;
+
+  @include tablet {
+    padding-bottom: 22px;
+  }
 }
 
-.advantages__item--color:nth-child(2) .advantages__text-block {
-  padding: 41px 33px;
+.advantages__second-list .advantages__item--secondary:first-child::after,
+.advantages__second-list .advantages__item--secondary:nth-child(2)::after {
+  content: "";
+
+  position: absolute;
+
+  right: 50%;
+  bottom: 11px;
+  transform: translateX(50%);
+
+  width: 86%;
+  height: 1px;
+
+  background: #d6d6d6;
+
+  @include tablet {
+    display: none;
+  }
 }
+
 
 .advantages__text-block {
   width: 284px;
-  padding: 33px 18px 40px;
-  text-align: center;
+
+  margin: 0 auto;
+  padding: 23px 10px 36px;
+
+  &--main {
+    padding: 40px 10px;
+
+    @include tablet {
+      padding: 37px 30px 30px;
+    }
+
+    @include desktop {
+      padding: 20px 10px 30px;
+    }
+  }
+
+  &--order {
+    @include tablet {
+      order: 2;
+
+      padding: 8px 35px 0;
+    }
+
+    @include desktop {
+      justify-content: normal;
+      margin: 30px auto;
+    }
+  }
+
+  @include tablet {
+    width: 256px;
+  }
+
+  @include desktop {
+    width: 300px;
+  }
+
+  @include flex-center(column);
 }
 
+.advantages__text--main .advantages__title {
+  @include desktop {
+    margin: 14px 40px;
+  }
+}
 
-
-.advantages__text-block--color {
-  background-color: #81B3D2;
-  color: #FFFFFF;
+.advantages__text--order .advantages__title {
   @include tablet {
-    height: 256px;
-    padding: 52px 33px 31px 33px;
+    margin: 0 20px 13px 16px;
+  }
+
+  @include desktop {
+    margin: -26px 42px 13px 38px;
   }
 }
 

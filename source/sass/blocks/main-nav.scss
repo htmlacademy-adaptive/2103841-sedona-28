@@ -95,6 +95,7 @@
 
 .main-nav__list {
   @include clear-list;
+
   @include tablet {
     display: grid;
     grid-template-columns: 1fr 1fr 20% 1fr 1fr;
@@ -139,6 +140,7 @@
 
 .main-nav__item {
   min-height: 56px;
+
   @include flex-center(row);
   box-shadow: 0 1px 0 (#01010133);
 
@@ -155,10 +157,13 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
+
   @include flex-center(row);
+
   @include tablet {
     color: #000000;
   }
+
   &--current {
     @include tablet {
       color: #766357;

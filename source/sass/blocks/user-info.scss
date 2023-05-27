@@ -21,10 +21,6 @@
       right: 50%;
 
       background-color: #dbdbdb;
-
-      @include desktop {
-        right: 48.5%;
-      }
     }
   }
 
@@ -34,6 +30,10 @@
     justify-content: space-between;
 
     width: 960px;
+
+    &::before {
+      right: 48.5%;
+    }
   }
 }
 
@@ -71,7 +71,7 @@
 
     background-color: #dbdbdb;
 
-    @include tablet{
+    @include tablet {
       display: none;
     }
   }
