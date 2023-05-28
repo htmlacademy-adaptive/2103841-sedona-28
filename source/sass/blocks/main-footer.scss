@@ -1,28 +1,23 @@
 
 .main-footer__container {
-  margin: 33px 82px;
+  padding: 20px 83px;
 
   @include tablet {
-    margin: 36px 60px;
+    padding: 22px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
   }
 
   @include desktop {
-    margin: 36px 120px;
+    padding: 20px 120px;
   }
 }
 
 .main-footer__hashtag {
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   color: #000000;
 }
-
-.copyright__text {
-  color: #000000;
-}
-

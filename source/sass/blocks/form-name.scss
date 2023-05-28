@@ -44,7 +44,7 @@
 }
 
 .form-name__button {
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -89,31 +89,25 @@
   @include tablet {
     font-weight: 400;
     font-size: 14px;
-    line-height: 21px;;
+    line-height: 21px;
   }
 }
 
 .form-name__opinion {
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-style: normal;
-  display: flex;
-  flex-direction: column;
-
-  @include tablet {
+  /* @include tablet {
     margin-top: 26px;
-  }
+  } */
 }
 
 .form-name__input {
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 26px;;
-
+  line-height: 26px;
   background-color: #f2f2f2;
-
   border: none;
-
   padding: 19px 16px 13px 14px;
   letter-spacing: -1px;
 
@@ -149,7 +143,7 @@
       height: 160px;
 
       padding: 20px 15px;
-      margin-top: 23px;
+      margin: 0;
     }
 
     @include desktop {

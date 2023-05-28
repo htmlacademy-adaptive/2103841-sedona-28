@@ -3,10 +3,11 @@
 
   background-color: #ffffff;
   color: #000000;
-  margin-top: 31px;
+
+  padding-top: 30px;
+  padding-left: 40px;
   margin-bottom: 25px;
-  margin-left: 65px;
-  margin-right: 18px;
+
   display: grid;
   grid-template-columns: 25px 1fr;
   row-gap: 14px;
@@ -86,8 +87,8 @@
   }
 }
 
-.reasons__item--hotels .reasons__text,
-.reasons__item--souvenirs .reasons__text {
+.reasons__item--housing .advantages__description,
+.reasons__item--souvenirs .advantages__description {
   @include tablet {
     max-width: 180px;
   }
@@ -100,12 +101,12 @@
 .reasons__item--souvenirs br {
   display: none;
 
-  @include desktop {
+  @include tablet {
     display: inline;
   }
 }
 
-.reasons__item--souvenirs .reasons__text {
+.reasons__item--souvenirs .advantages__description {
   @include tablet {
     max-width: 180px;
   }
@@ -115,7 +116,7 @@
   }
 }
 
-.reasons__item--food .reasons__text {
+.reasons__item--food .advantages__description {
   @include tablet {
     max-width: 200px;
   }
@@ -195,23 +196,12 @@
   }
 }
 
-.reasons__item .reasons__title {
+.reasons__item .advantages__title {
   margin: 0;
 
   grid-row: 1 / 2;
 }
 
-.reasons__item--souvenirs .reasons__title {
+.reasons__item--souvenirs .advantages__title {
   padding-top: 0;
-}
-
-.reasons__title {
-  font-size: 18px;
-  line-height: 26px;
-  margin: 14px 0 11px;
-
-  @include tablet{
-    font-size: 21px;
-    margin: 14px 0 14px;
-  }
 }

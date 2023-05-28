@@ -1,6 +1,6 @@
 .modal {
   display: none;
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-style: normal;
 
   text-align: center;
@@ -105,7 +105,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-
+  text-transform: uppercase;
   margin: 0;
 
   color: #333333;
@@ -135,7 +135,6 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  ;
 
   min-width: 180px;
   min-height: 58px;

@@ -18,7 +18,7 @@
     background-color: #dbdbdb;
 
     @include tablet {
-      top: 13px;
+      top: 20px;
     }
   }
 }
@@ -40,7 +40,7 @@
 
 .grade-wrapper:nth-child(2)::before {
   @include tablet {
-    top: 28px;
+    top: 35px;
   }
 }
 
@@ -68,12 +68,12 @@
   }
 }
 
-.grade-wrapper .form-name__heading {
+.grade-wrapper .form-name__heading--opinion {
   display: block;
   padding: 12px 0 0;
   margin: 0 auto 28px;
 
   @include tablet {
-    padding: 3px 0 0;
+    padding: 3px 75px 0;
   }
 }

@@ -1,6 +1,61 @@
 .map iframe {
-  border: none;
-  display: block;
   height: 350px;
   width: 100%;
+  border: none;
+  display: block;
+
+  background-color: #71b05b;
+}
+
+
+.map--nojs iframe {
+  display: none;
+}
+
+.map--nojs .map__wrapper {
+  position: relative;
+
+  min-height: 350px;
+
+  background-color: #71b05b;
+  background-image: url("../img/map-mobile.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map-mobile@2x.jpg");
+  }
+
+  @include tablet {
+    background-image: url("../img/map-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-tablet@2x.jpg");
+    }
+  }
+
+  @include desktop {
+    background-image: url("../img/map-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-desktop@2x.jpg");
+    }
+  }
+
+  &::before {
+    position: absolute;
+
+    content: "";
+
+    width: 27px;
+    height: 27px;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background-image: url("data:image/svg+xml,%3Csvg width='27' height='27' viewBox='0 0 27 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.5 27C20.9558 27 27 20.9558 27 13.5C27 6.04416 20.9558 0 13.5 0C6.04416 0 0 6.04416 0 13.5C0 20.9558 6.04416 27 13.5 27Z' fill='white'/%3E%3Cpath d='M13.5 21.8996C18.1392 21.8996 21.9 18.1388 21.9 13.4996C21.9 8.86042 18.1392 5.09961 13.5 5.09961C8.86078 5.09961 5.09998 8.86042 5.09998 13.4996C5.09998 18.1388 8.86078 21.8996 13.5 21.8996Z' fill='%2381B3D3'/%3E%3C/svg%3E");
+  }
 }

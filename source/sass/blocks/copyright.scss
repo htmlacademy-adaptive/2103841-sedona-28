@@ -1,12 +1,21 @@
-
-.copyright {
-  padding: 30px 18px 33px 18px;
+.copyright__link {
   display: flex;
   align-items: center;
 }
 
+
+.copyright {
+  padding: 25px 14px 25px 14px;
+  display: flex;
+  align-items: center;
+
+  @include tablet {
+    padding: 25px 0;
+  }
+}
+
 .copyright__text {
   font-weight: 400;
-  margin-right: 5px;
+  margin-right: 12px;
   color: #000000;
 }

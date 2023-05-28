@@ -49,13 +49,14 @@
   @include tablet {
     margin: 0 97px 90px;
   }
-  @include desktop{
+
+  @include desktop {
     margin: 0 174px 90px;
   }
 }
 
 
-.video-clip__img {
+.video-presentation__img {
   margin: 0 auto;
   width: 100%;
   height: auto;

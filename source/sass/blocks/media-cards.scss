@@ -1,5 +1,6 @@
 .media-cards {
   @include clear-list;
+
   @include tablet {
     margin: 38px 0 0;
 
@@ -91,7 +92,7 @@
   margin: 15px 15px 0;
   color: inherit;
 
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
@@ -140,4 +141,3 @@
     background-repeat: no-repeat;
   }
 }
-

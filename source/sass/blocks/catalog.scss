@@ -1,0 +1,25 @@
+.catalog__heading {
+  padding: 17px 0 60px;
+
+  @include tablet {
+    padding: 6px 0 39px;
+
+    max-width: 435px;
+  }
+
+  @include desktop {
+    padding: 6px 0 50px;
+    margin-top: 92px;
+  }
+}
+
+.catalog__heading .intro__title {
+  margin: 0 0 26px;
+
+  @include tablet {
+    font-size: 30px;
+    line-height: 26px;
+    font-weight: 700;
+    margin: 0 0 33px;
+  }
+}
