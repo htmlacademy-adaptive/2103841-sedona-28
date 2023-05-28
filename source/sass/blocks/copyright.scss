@@ -8,6 +8,10 @@
   padding: 25px 14px 25px 14px;
   display: flex;
   align-items: center;
+
+  @include tablet {
+    padding: 25px 0;
+  }
 }
 
 .copyright__text {

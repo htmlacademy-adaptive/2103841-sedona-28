@@ -1,0 +1,26 @@
+.feedback__heading {
+  padding: 36px 0 30px;
+
+  @include tablet {
+    padding: 62px 0 70px;
+    max-width: 438px;
+  }
+
+  @include desktop {
+    padding: 114px 0 61px;
+  }
+}
+
+.feedback .intro__title {
+  margin: 0 0 23px;
+
+  @include tablet {
+    font-size: 30px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+
+  @include desktop {
+    margin: 0 0 29px;
+  }
+}

@@ -25,12 +25,12 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--current">
+              <a class="main-nav__link" href="index.html">
                 Главная
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">
+              <a class="main-nav__link main-nav__link--current" href="catalog.html">
                 Фото и Видео
               </a>
             </li>
@@ -51,106 +51,106 @@
     <main class="main-container">
       <section class="greetings greetings--alt">
         <div class="greetings__wrapper">
-          <h1 class="visually-hidden">Добро пожаловать в великолепную Седону!</h1>
+          <h1 class="visually-hidden">Галерея фотографий и видео Седоны.</h1>
           <img class="greetings__text greetings__text--short" src="img/greetings-form-text.svg" alt="Добро пожаловать в Седону" width="229" height="39">
         </div>
       </section>
       <section class="media-content">
-        <div class="media-content__container">
-          <div class="intro">
-            <h2 class="intro__title title">Фото и видео</h2>
-            <p class="intro__description description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <div class="catalog">
+          <div class="intro catalog__heading">
+            <h2 class="intro__title">Фото и видео</h2>
+            <p class="intro__description description">Не можете решиться на путешествие из-за курса? <br>Фотографии помогут вам забыть о политике и экономике.</p>
           </div>
-          <ul class="media-content__list media-cards">
-            <li class="media-cards__item card card--big">
-              <a href="#" class="media-cards__img-wrapper">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/desert-road-desktop.webp 1x, img/desert-road-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/desert-road-tablet.webp 1x, img/desert-road-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/desert-road-mobile.jpg 1x, img/desert-road-mobile@2x.jpg 2x">
-                  <source media="(min-width: 1200px)" srcset="img/desert-road-desktop.jpg 1x, img/desert-road-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/desert-road-tablet.jpg 1x, img/desert-road-tablet@2x.jpg 2x">
-                  <img class="media-cards__img" src="img/desert-road-mobile.jpg" srcset="img/desert-road-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога в пустыне">
-                </picture>
-              </a>
-              <div class="media-cards__wrapper">
-                <div class="media-cards__text">
-                  <h3 class="media-cards__title">Неродные просторы</h3>
-                  <p class="media-cards__author">Автор фото: Борис</p>
-                </div>
-                <div class="media-cards__likes like-rating">
-                  <button class="media-cards__button" type="button"><span class="visually-hidden">Поставить
-                      лайк</span>
-                  </button>
-                  <span class="like-rating__amount">1350</span>
-                </div>
-              </div>
-            </li>
-            <li class="media-cards__item card">
-              <a href="#" class="media-cards__img-wrapper">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="img/kaktus-desktop.jpg 1x, img/kaktus-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/kaktus-tablet.jpg 1x, img/kaktus-tablet@2x.jpg 2x">
-                  <img class="media-cards__img" src="img/kaktus-mobile.jpg" srcset="img/kaktus-mobile@2x.jpg 2x" width="280" height="280" alt="Кактус">
-                </picture>
-              </a>
-              <div class="media-cards__wrapper">
-                <div class="media-cards__text">
-                  <h3 class="media-cards__title">Местная растительность</h3>
-                  <p class="media-cards__author">Автор фото: Сергей</p>
-                </div>
-                <div class="media-cards__likes like-rating">
-                  <button class="media-cards__button" type="button"><span class="visually-hidden">Поставить
-                      лайк</span>
-                  </button>
-                  <span class="like-rating__amount">143</span>
-                </div>
-              </div>
-            </li>
-            <li class="media-cards__item card">
-              <a href="#" class="media-cards__img-wrapper">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="img/mountain-road-desktop.jpg 1x, img/mountain-road-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/mountain-road-tablet.jpg 1x, img/mountain-road-tablet@2x.jpg 2x">
-                  <img class="media-cards__img" src="img/mountain-road-mobile.jpg" srcset="img/mountain-road-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога в горах">
-                </picture>
-              </a>
-              <div class="media-cards__wrapper">
-                <div class="media-cards__text">
-                  <h3 class="media-cards__title">Дорога на север</h3>
-                  <p class="media-cards__author">Автор фото: Петр</p>
-                </div>
-                <div class="media-cards__likes like-rating">
-                  <button class="media-cards__button" type="button"><span class="visually-hidden">Поставить
-                      лайк</span>
-                  </button>
-                  <span class="like-rating__amount">96</span>
-                </div>
-              </div>
-            </li>
-            <li class="media-cards__item card">
-              <a href="#" class="media-cards__img-wrapper">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="img/devil-bridge-catalog-desktop.jpg 1x, img/devil-bridge-catalog-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/devil-bridge-catalog-tablet.jpg 1x, img/devil-bridge-catalog-tablet@2x.jpg 2x">
-                  <img class="media-cards__img" src="img/devil-bridge-catalog-mobile.jpg" srcset="img/devil-bridge-catalog-mobile@2x.jpg 2x" width="280" height="280" alt="Мост в горах над пропастью">
-                </picture>
-              </a>
-              <div class="media-cards__wrapper">
-                <div class="media-cards__text">
-                  <h3 class="media-cards__title">Мост дьявола</h3>
-                  <p class="media-cards__author">Автор фото: Антон</p>
-                </div>
-                <div class="media-cards__likes like-rating">
-                  <button class="media-cards__button" type="button"><span class="visually-hidden">Поставить
-                      лайк</span>
-                  </button>
-                  <span class="like-rating__amount">254</span>
-                </div>
-              </div>
-            </li>
-          </ul>
         </div>
+        <ul class="media-cards">
+          <li class="media-cards__item card card--big">
+            <a href="#" class="media-cards__img-wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/desert-road-desktop.webp 1x, img/desert-road-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/desert-road-tablet.webp 1x, img/desert-road-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/desert-road-mobile.jpg 1x, img/desert-road-mobile@2x.jpg 2x">
+                <source media="(min-width: 1200px)" srcset="img/desert-road-desktop.jpg 1x, img/desert-road-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/desert-road-tablet.jpg 1x, img/desert-road-tablet@2x.jpg 2x">
+                <img class="media-cards__img" src="img/desert-road-mobile.jpg" srcset="img/desert-road-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога в пустыне">
+              </picture>
+            </a>
+            <div class="media-cards__wrapper">
+              <div class="media-cards__text">
+                <h3 class="media-cards__title">Неродные просторы</h3>
+                <p class="media-cards__author">Автор фото: Борис</p>
+              </div>
+              <div class="media-cards__likes like-rating">
+                <button class="media-cards__button" type="button"><span class="visually-hidden">Поставить
+                    лайк</span>
+                </button>
+                <span class="like-rating__amount">1350</span>
+              </div>
+            </div>
+          </li>
+          <li class="media-cards__item card">
+            <a href="#" class="media-cards__img-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/kaktus-desktop.jpg 1x, img/kaktus-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/kaktus-tablet.jpg 1x, img/kaktus-tablet@2x.jpg 2x">
+                <img class="media-cards__img" src="img/kaktus-mobile.jpg" srcset="img/kaktus-mobile@2x.jpg 2x" width="280" height="280" alt="Кактус">
+              </picture>
+            </a>
+            <div class="media-cards__wrapper">
+              <div class="media-cards__text">
+                <h3 class="media-cards__title">Местная растительность</h3>
+                <p class="media-cards__author">Автор фото: Сергей</p>
+              </div>
+              <div class="media-cards__likes like-rating">
+                <button class="media-cards__button" type="button"><span class="visually-hidden">Поставить
+                    лайк</span>
+                </button>
+                <span class="like-rating__amount">143</span>
+              </div>
+            </div>
+          </li>
+          <li class="media-cards__item card">
+            <a href="#" class="media-cards__img-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/mountain-road-desktop.jpg 1x, img/mountain-road-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/mountain-road-tablet.jpg 1x, img/mountain-road-tablet@2x.jpg 2x">
+                <img class="media-cards__img" src="img/mountain-road-mobile.jpg" srcset="img/mountain-road-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога в горах">
+              </picture>
+            </a>
+            <div class="media-cards__wrapper">
+              <div class="media-cards__text">
+                <h3 class="media-cards__title">Дорога на север</h3>
+                <p class="media-cards__author">Автор фото: Петр</p>
+              </div>
+              <div class="media-cards__likes like-rating">
+                <button class="media-cards__button" type="button"><span class="visually-hidden">Поставить
+                    лайк</span>
+                </button>
+                <span class="like-rating__amount">96</span>
+              </div>
+            </div>
+          </li>
+          <li class="media-cards__item card">
+            <a href="#" class="media-cards__img-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/devil-bridge-catalog-desktop.jpg 1x, img/devil-bridge-catalog-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/devil-bridge-catalog-tablet.jpg 1x, img/devil-bridge-catalog-tablet@2x.jpg 2x">
+                <img class="media-cards__img" src="img/devil-bridge-catalog-mobile.jpg" srcset="img/devil-bridge-catalog-mobile@2x.jpg 2x" width="280" height="280" alt="Мост в горах над пропастью">
+              </picture>
+            </a>
+            <div class="media-cards__wrapper">
+              <div class="media-cards__text">
+                <h3 class="media-cards__title">Мост дьявола</h3>
+                <p class="media-cards__author">Автор фото: Антон</p>
+              </div>
+              <div class="media-cards__likes like-rating">
+                <button class="media-cards__button" type="button"><span class="visually-hidden">Поставить
+                    лайк</span>
+                </button>
+                <span class="like-rating__amount">254</span>
+              </div>
+            </div>
+          </li>
+        </ul>
       </section>
       <section class="video-presentation">
         <h2 class="video-presentation__title title">Все еще сомневаетесь?</h2>
@@ -212,7 +212,7 @@
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <b class="copyright__text">Разработано</b>
             <span class="visually-hidden">HTML Academy.</span>
             <svg class="copyright__logo" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -15,13 +15,13 @@
 }
 
 
-.form-name-block__list--first .form-name__input::placeholder,
-.form-name-block__list--first .form-name__input {
+.form-name-block__list--first .form-name-block__input::placeholder,
+.form-name-block__list--first .form-name-block__input {
   color: rgba(0, 0, 0,);
 }
 
-.form-name-block__list--second .form-name__input::placeholder,
-.form-name-block__list--second .form-name__input {
+.form-name-block__list--second .form-name-block__input::placeholder,
+.form-name-block__list--second .form-name-block__input {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -77,7 +77,7 @@
     }
 
     @include desktop {
-      padding-left: 64px;
+      padding-left: 35px;
     }
   }
 }

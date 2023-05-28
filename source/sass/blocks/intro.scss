@@ -29,3 +29,11 @@
     line-height: 26px;
   }
 }
+
+.intro__description br {
+  display: none;
+
+  @include tablet {
+    display: inline;
+  }
+}
