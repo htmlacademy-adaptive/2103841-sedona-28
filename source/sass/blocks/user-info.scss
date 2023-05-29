@@ -30,14 +30,10 @@
     justify-content: space-between;
 
     width: 960px;
-
-    &::before {
-      right: 48.5%;
-    }
   }
 }
 
-.user-info .form-name-block {
+.user-info .user-info__form-name-block {
   padding: 0 20px 45px;
 
   @include tablet {
@@ -53,8 +49,8 @@
   }
 }
 
-.user-info .form-name-block:first-child,
-.user-info .form-name-block:last-child {
+.user-info .user-info__form-name-block:first-child,
+.user-info .user-info__form-name-block:last-child {
   position: relative;
 
   &::before {
@@ -77,7 +73,7 @@
   }
 }
 
-.user-info .form-name-block:first-child {
+.user-info .user-info__form-name-block:first-child {
   @include desktop {
     width: 490px;
   }
@@ -87,21 +83,35 @@
   }
 }
 
-.user-info .form-name-block:last-child {
+.user-info .user-info__form-name-block:last-child {
   &::before {
     top: -50px;
   }
 }
 
-.user-info .form-name__heading {
+.user-info .user-info__heading--first {
   @include tablet {
-    padding: 0 0 10px;
+    padding: 8px 24px 15px 0;
+  }
+
+  @include desktop {
+    padding: 4px 58px 10px 0;
   }
 }
 
-.user-info .form-name__input {
+.user-info .user-info__heading--second {
   @include tablet {
-    width: 277px;
+    padding: 7px 0 14px 27px;
+  }
+
+  @include desktop {
+    padding: 6px 0 7px 32px;
+  }
+}
+
+.user-info .user-info__form-name-input {
+  @include tablet {
+    width: 294px;
   }
 
   @include desktop {

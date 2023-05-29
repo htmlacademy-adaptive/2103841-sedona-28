@@ -8,11 +8,10 @@
     content: "";
     height: 1px;
     width: 100vw;
-    background-color: #E5E5E5;
+    background-color: #e5e5e5;
   }
 
   @include tablet {
-
     &::before {
       content: none;
     }

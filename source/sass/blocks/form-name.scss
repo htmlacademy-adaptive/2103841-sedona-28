@@ -109,7 +109,6 @@
   background-color: #f2f2f2;
   border: none;
   padding: 19px 16px 13px 14px;
-  letter-spacing: -1px;
 
   &--icon-phone {
     padding: 19px 57px 15px 14px;
@@ -131,10 +130,10 @@
 
   &--opinion {
     height: 150px;
-    min-width: 280px;
+    max-width: 280px;
 
     padding: 15px;
-    margin-top: 24px;
+    margin-top: -6px;
 
     resize: none;
 
@@ -152,7 +151,7 @@
   }
 
   @include tablet {
-    padding: 19px 16px 12px 12px;
+    padding: 23px 17px 9px 15px;
   }
 }
 
@@ -167,12 +166,12 @@
   background-color: #e5e5e5;
 }
 
-.form-name__input:focus {
+.form-name__input:active {
   outline: none;
   background-color: #e5e5e5;
 }
 
-.form-name__input:active {
+.form-name__input:focus {
   outline: 4px solid #e5e5e5;
   outline-offset: -4px;
   background-color: #ffffff;
