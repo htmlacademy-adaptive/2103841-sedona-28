@@ -1,7 +1,8 @@
 .attractions__label {
+  display: block;
   position: relative;
   text-transform: none;
-  margin-left: 16px;
+  margin-left: 40px;
 
   &::before {
     position: absolute;

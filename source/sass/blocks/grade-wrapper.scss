@@ -18,12 +18,12 @@
     background-color: #dbdbdb;
 
     @include tablet {
-      top: 20px;
+      top: 15px;
     }
   }
 }
 
-.grade-wrapper .form-name-block {
+.grade-wrapper .grade-wrapper__form-name-block {
   padding: 0 20px;
 
   @include tablet {
@@ -40,11 +40,11 @@
 
 .grade-wrapper:nth-child(2)::before {
   @include tablet {
-    top: 35px;
+    top: 30px;
   }
 }
 
-.grade-wrapper .form-name-block:first-child {
+.grade-wrapper .grade-wrapper__form-name-block:first-child {
   padding-bottom: 7px;
 
   @include tablet {
@@ -56,22 +56,22 @@
   }
 }
 
-.grade-wrapper .form-name__heading {
+.grade-wrapper .grade-wrapper__form-name-heading {
   padding: 15px 0 0;
   margin-bottom: 26px;
 
   @include tablet {
-    padding: 2px 66px 2px;
+    padding: 3px 66px 3px;
     margin-bottom: 0;
 
     position: relative;
   }
 }
 
-.grade-wrapper .form-name__heading--opinion {
+.grade-wrapper .grade-wrapper__form-name-heading--opinion {
   display: block;
   padding: 12px 0 0;
-  margin: 0 auto 28px;
+  margin: 0 auto 20px;
 
   @include tablet {
     padding: 3px 75px 0;
